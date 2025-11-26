@@ -3,3 +3,4 @@ class Limpieza1:
         if valor == "NA" or valor == "":
             return "0"
         return valor
+    

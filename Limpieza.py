@@ -3,5 +3,3 @@ class Limpieza:
         dia, mes, año = fecha.split("/")
         return f"{año}-{mes}-{dia}"
     
-
-    
