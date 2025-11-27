@@ -53,3 +53,26 @@ def mostrar_estadisticas():
         print(f"   Máximo: {info['máximo']}")
         print(f"   Cantidad de ceros: {info['cantidad ceros']}")
     print("=============================================\n")
+
+def menu():
+    while True:
+        print("""
+======== MENÚ PRINCIPAL ========
+1. Limpiar archivo CSV
+2. Ver estadísticas del archivo limpio
+3. Salir
+""")
+        op = input("Seleccione una opción: ")
+
+        if op == "1":
+            limpiar_archivo()
+        elif op == "2":
+            mostrar_estadisticas()
+        elif op == "3":
+            print("Saliendo del programa...")
+            break
+        else:
+            print("Opción inválida, intente de nuevo.")
+
+
+menu()
