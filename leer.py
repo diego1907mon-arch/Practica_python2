@@ -1,15 +1,13 @@
+
 import csv
+class LectorCSV:
+    def __init__(self, ruta):
+        self.ruta = ruta
 
-
-def leer_csv(ruta):
-    filas=[]
-    with open(ruta, encoding="utf-8") as f:
-        lector = csv.DictReader(f)
-        for fila in lector:
-            filas.append(fila)
-    return filas
-        
-archivo = "c:/Users/Aprendiz/Downloads/dataset2_football_matches.csv"
-datos = leer_csv(archivo)
-
-print("cantidad de datos:",len(datos))
+    def leer(self):  # <- esto debe estar indentado dentro de la clase
+        filas = []
+        with open(self.ruta, newline='', encoding='utf-8-sig') as archivo:
+            lector = csv.reader(archivo)
+            for fila in lector:
+                filas.append(fila)
+        return filas 
