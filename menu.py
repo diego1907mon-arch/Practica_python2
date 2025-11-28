@@ -59,7 +59,7 @@ class Menu:
 
 # Ejecutar menú
 if __name__ == "__main__":
-    ruta = "c:/Users/Aprendiz/Downloads/dataset2_football_matches_clean.csv"
+    ruta =  "c:/Users/Aprendiz/Downloads/dataset2_football_matches_clean.csv"
     menu = Menu(ruta)
     menu.iniciar()
 

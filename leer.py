@@ -1,7 +1,7 @@
 
 import csv
 class LectorCSV:
-    def _init_(self, ruta):
+    def __init__(self, ruta):
         self.ruta = ruta
 
     def leer(self):  # <- esto debe estar indentado dentro de la clase
